@@ -44,3 +44,28 @@ jmeter/README.md
 
 # Claude config
 .claude/
+
+# Installers
+*.exe
+*.msi
+pycharm_download.html
+jmeter.log
+skills-lock.json
+
+# JMeter binaries (keep plans only)
+jmeter/*
+!jmeter/plans/
+!jmeter/gen_jmx.py
+!jmeter/users.csv
+
+# Installers
+*.exe
+*.msi
+pycharm_download.html
+jmeter.log
+skills-lock.json
+
+# JMeter binaries (keep plans only)
+jmeter/*
+!jmeter/plans/
+!jmeter/gen_jmx.py
