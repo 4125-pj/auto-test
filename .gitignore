@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+
+# Environment
+.env
+
+# Logs and reports
+logs/
+reports/
+screenshots/
+
+# JMeter
+jmeter/results/
+jmeter/apache-jmeter-*.zip
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+install.ps1
+download_pycharm.py
+.agents/
+
+# JMeter binaries
+jmeter/bin/
+jmeter/lib/
+jmeter/lib/
+jmeter/docs/
+jmeter/printable_docs/
+jmeter/LICENSE
+jmeter/NOTICE
+jmeter/README.md
+
+# Claude config
+.claude/
