@@ -26,8 +26,5 @@ jobs:
           echo "UI_USERNAME=${{ secrets.UI_USERNAME }}" >> .env
           echo "UI_PASSWORD=${{ secrets.UI_PASSWORD }}" >> .env
 
-      - name: Debug .env
-        run: cat .env
-
       - name: Run API tests
         run: python -m pytest api/tests/ -v --no-header
