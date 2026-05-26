@@ -18,13 +18,16 @@ jobs:
 
       - name: Create .env file
         run: |
-          echo "BASE_URL=${{ secrets.BASE_URL }}" >> .env
+          echo "BASE_URL=${{ secrets.BASE_URL }}" > .env
           echo "API_BASE_URL=${{ secrets.API_BASE_URL }}" >> .env
           echo "API_USERNAME=${{ secrets.API_USERNAME }}" >> .env
           echo "API_PASSWORD=${{ secrets.API_PASSWORD }}" >> .env
           echo "UI_BASE_URL=${{ secrets.UI_BASE_URL }}" >> .env
           echo "UI_USERNAME=${{ secrets.UI_USERNAME }}" >> .env
           echo "UI_PASSWORD=${{ secrets.UI_PASSWORD }}" >> .env
+
+      - name: Debug .env
+        run: cat .env
 
       - name: Run API tests
         run: python -m pytest api/tests/ -v --no-header
