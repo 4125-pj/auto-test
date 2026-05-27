@@ -56,3 +56,4 @@ skills-lock.json
 jmeter/*
 !jmeter/plans/
 !jmeter/gen_jmx.py
+jenkins.war
