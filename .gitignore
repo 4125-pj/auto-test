@@ -57,3 +57,5 @@ jmeter/*
 !jmeter/plans/
 !jmeter/gen_jmx.py
 jenkins.war
+
+# 项目记忆文档
